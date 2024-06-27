@@ -1,0 +1,881 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>andrewpetrochenkov</title><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" /><base href="https://andrewpetrochenkov.github.io/"><link rel="stylesheet" href="/index.css"></head><body><svg style="display: none"><symbol id="book" viewBox="0 0 16 16"><path d="M0 1.75A.75.75 0 0 1 .75 1h4.253c1.227 0 2.317.59 3 1.501A3.743 3.743 0 0 1 11.006 1h4.245a.75.75 0 0 1 .75.75v10.5a.75.75 0 0 1-.75.75h-4.507a2.25 2.25 0 0 0-1.591.659l-.622.621a.75.75 0 0 1-1.06 0l-.622-.621A2.25 2.25 0 0 0 5.258 13H.75a.75.75 0 0 1-.75-.75Zm7.251 10.324.004-5.073-.002-2.253A2.25 2.25 0 0 0 5.003 2.5H1.5v9h3.757a3.75 3.75 0 0 1 1.994.574ZM8.755 4.75l-.004 7.322a3.752 3.752 0 0 1 1.992-.572H14.5v-9h-3.495a2.25 2.25 0 0 0-2.25 2.25Z"></path></symbol><symbol id="check" viewBox="0 0 12 16"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"></path></symbol><symbol id="repo" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path></symbol><symbol id="repo-forked" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M5 3.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm0 2.122a2.25 2.25 0 10-1.5 0v.878A2.25 2.25 0 005.75 8.5h1.5v2.128a2.251 2.251 0 101.5 0V8.5h1.5a2.25 2.25 0 002.25-2.25v-.878a2.25 2.25 0 10-1.5 0v.878a.75.75 0 01-.75.75h-4.5A.75.75 0 015 6.25v-.878zm3.75 7.378a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm3-8.75a.75.75 0 100-1.5.75.75 0 000 1.5z"></path></symbol><symbol id="star" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"></path></symbol></svg><div class="pagehead bg-gray-light pb-0 pt-2 mb-2"><div class="d-flex flex-md-row flex-column px-0 pr-md-3 px-lg-2"><div class="flex-md-order-1 flex-order-2 flex-auto"><nav class="UnderlineNav"><div class="UnderlineNav-body"><a class="UnderlineNav-item" href="/"><svg class="octicon mr-1"><use xlink:href="#book" /></svg>
+    Overview
+</a><a class="UnderlineNav-item" href="/repositories/"><svg class="octicon mr-1"><use xlink:href="#repo" /></svg>
+    Repositories <span class="Counter">383</span></a><a class="UnderlineNav-item selected" href="/stars"><svg class="octicon mr-1"><use xlink:href="#star" /></svg>
+    Stars <span class="Counter">206</span></a></div><div class="UnderlineNav-actions"></div></nav></div></div></div><div class="px-2"><div class="clearfix py-2"><div class="float-left d-flex"><form action="https://github.com/andrewpetrochenkov" class="pr-2" method="GET" target="_blank"><input type="search" id="filter" name="q" class="form-control width-full" placeholder="Search stars" autocomplete="off" value=""><input type="hidden" name="tab" value="stars" /><input type="hidden" name="language" value="Jinja" /></form><details class="details-reset details-overlay position-relative mt-1 mt-lg-0 mr-1"><summary class="btn" aria-haspopup="menu" role="button" >
+    Type
+    <span class="text-bold"></span><span class="dropdown-caret"></span></summary><details-menu class="SelectMenu right-lg-0" role="menu"><div class="SelectMenu-modal"><header class="SelectMenu-header"><span class="SelectMenu-title text-left">Select type
+        
+      </span></header><div class="SelectMenu-list"><a class="SelectMenu-item selected" aria-checked="true" role="menuitemradio" href="/stars" rel="nofollow"><svg class="octicon select-menu-item-icon"><use xlink:href="#check" /></svg><span class="pl-2 text-normal width-full text-bold">
+            All
+             <span class="Counter float-right">206</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/type/fork" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            Forks
+             <span class="Counter float-right">2</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/type/mirror" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            Mirrors
+             <span class="Counter float-right">0</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/type/template" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            Templates
+             <span class="Counter float-right">0</span></span></a></div></details-menu></details><details class="details-reset details-overlay position-relative mt-1 mt-lg-0 mr-1"><summary class="btn" aria-haspopup="menu" role="button" >
+    Language
+    <span class="text-bold"></span><span class="dropdown-caret"></span></summary><details-menu class="SelectMenu right-lg-0" role="menu"><div class="SelectMenu-modal"><header class="SelectMenu-header"><span class="SelectMenu-title text-left">Select language
+        
+        <span class="float-right"><a class="Link--muted" href="/stars/language">20 languages</a></span></span></header><div class="SelectMenu-list"><a class="SelectMenu-item "  role="menuitemradio" href="/stars" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            All
+             <span class="Counter float-right">213</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/language/python" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            Python
+             <span class="Counter float-right">135</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/language/javascript" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            JavaScript
+             <span class="Counter float-right">24</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/language/html" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            HTML
+             <span class="Counter float-right">5</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/language/typescript" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            TypeScript
+             <span class="Counter float-right">5</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/language/objective-c" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            Objective-C
+             <span class="Counter float-right">4</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/language/shell" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            Shell
+             <span class="Counter float-right">4</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/language/css" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            CSS
+             <span class="Counter float-right">3</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/language/go" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            Go
+             <span class="Counter float-right">3</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/language/cpp" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            C++
+             <span class="Counter float-right">2</span></span></a><a class="SelectMenu-item selected" aria-checked="true" role="menuitemradio" href="/stars/language/jinja" rel="nofollow"><svg class="octicon select-menu-item-icon"><use xlink:href="#check" /></svg><span class="pl-2 text-normal width-full text-bold">
+            Jinja
+             <span class="Counter float-right">2</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/language/ruby" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            Ruby
+             <span class="Counter float-right">2</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/language/astro" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            Astro
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/language/c" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            C
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/language/coffeescript" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            CoffeeScript
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/language/postscript" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            PostScript
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/language/roff" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            Roff
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/language/rust" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            Rust
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/language/scss" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            SCSS
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/language/swift" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            Swift
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/language/none" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            None
+             <span class="Counter float-right">9</span></span></a></div></details-menu></details><details class="details-reset details-overlay position-relative mt-1 mt-lg-0 mr-1"><summary class="btn" aria-haspopup="menu" role="button" >
+    Topic
+    <span class="text-bold"></span><span class="dropdown-caret"></span></summary><details-menu class="SelectMenu right-lg-0" role="menu"><div class="SelectMenu-modal"><header class="SelectMenu-header"><span class="SelectMenu-title text-left">Select topic
+        
+        <span class="float-right"><a class="Link--muted" href="/stars/topic">390 topics</a></span></span></header><div class="SelectMenu-list"><a class="SelectMenu-item selected" aria-checked="true" role="menuitemradio" href="/stars" rel="nofollow"><svg class="octicon select-menu-item-icon"><use xlink:href="#check" /></svg><span class="pl-2 text-normal width-full text-bold">
+            All
+             <span class="Counter float-right">213</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/python" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            python
+             <span class="Counter float-right">53</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/django" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            django
+             <span class="Counter float-right">47</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/hacktoberfest" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            hacktoberfest
+             <span class="Counter float-right">16</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/wagtail" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            wagtail
+             <span class="Counter float-right">14</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/javascript" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            javascript
+             <span class="Counter float-right">7</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/python3" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            python3
+             <span class="Counter float-right">6</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/awesome" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            awesome
+             <span class="Counter float-right">5</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/css" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            css
+             <span class="Counter float-right">5</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/webpack" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            webpack
+             <span class="Counter float-right">5</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/webpack-plugin" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            webpack-plugin
+             <span class="Counter float-right">5</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/awesome-list" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            awesome-list
+             <span class="Counter float-right">4</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/cli" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            cli
+             <span class="Counter float-right">4</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/django-admin" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            django-admin
+             <span class="Counter float-right">4</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/github" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            github
+             <span class="Counter float-right">4</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/macos" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            macos
+             <span class="Counter float-right">4</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/redis" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            redis
+             <span class="Counter float-right">4</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/shell" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            shell
+             <span class="Counter float-right">4</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/terminal" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            terminal
+             <span class="Counter float-right">4</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/ansible" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            ansible
+             <span class="Counter float-right">3</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/cms" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            cms
+             <span class="Counter float-right">3</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/linter" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            linter
+             <span class="Counter float-right">3</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/monitoring" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            monitoring
+             <span class="Counter float-right">3</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/task" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            task
+             <span class="Counter float-right">3</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/api" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            api
+             <span class="Counter float-right">2</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/aws" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            aws
+             <span class="Counter float-right">2</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/bootstrap" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            bootstrap
+             <span class="Counter float-right">2</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/browser-extension" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            browser-extension
+             <span class="Counter float-right">2</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/cache" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            cache
+             <span class="Counter float-right">2</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/caching" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            caching
+             <span class="Counter float-right">2</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/cask" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            cask
+             <span class="Counter float-right">2</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/chrome-extension" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            chrome-extension
+             <span class="Counter float-right">2</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/client" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            client
+             <span class="Counter float-right">2</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/command-line" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            command-line
+             <span class="Counter float-right">2</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/commenting" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            commenting
+             <span class="Counter float-right">2</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/database" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            database
+             <span class="Counter float-right">2</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/developer-tools" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            developer-tools
+             <span class="Counter float-right">2</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/discord" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            discord
+             <span class="Counter float-right">2</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/django-orm" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            django-orm
+             <span class="Counter float-right">2</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/django-oscar" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            django-oscar
+             <span class="Counter float-right">2</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/documentation" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            documentation
+             <span class="Counter float-right">2</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/e-commerce" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            e-commerce
+             <span class="Counter float-right">2</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/homebrew" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            homebrew
+             <span class="Counter float-right">2</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/http" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            http
+             <span class="Counter float-right">2</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/jquery" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            jquery
+             <span class="Counter float-right">2</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/jquery-plugin" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            jquery-plugin
+             <span class="Counter float-right">2</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/node" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            node
+             <span class="Counter float-right">2</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/notifications" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            notifications
+             <span class="Counter float-right">2</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/osx" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            osx
+             <span class="Counter float-right">2</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/postcss" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            postcss
+             <span class="Counter float-right">2</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/postgresql" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            postgresql
+             <span class="Counter float-right">2</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/privacy" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            privacy
+             <span class="Counter float-right">2</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/python-library" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            python-library
+             <span class="Counter float-right">2</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/queue" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            queue
+             <span class="Counter float-right">2</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/reactjs" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            reactjs
+             <span class="Counter float-right">2</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/rest" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            rest
+             <span class="Counter float-right">2</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/security" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            security
+             <span class="Counter float-right">2</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/settings" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            settings
+             <span class="Counter float-right">2</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/sql" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            sql
+             <span class="Counter float-right">2</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/static-site-generator" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            static-site-generator
+             <span class="Counter float-right">2</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/style-guide" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            style-guide
+             <span class="Counter float-right">2</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/styleguide" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            styleguide
+             <span class="Counter float-right">2</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/svg" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            svg
+             <span class="Counter float-right">2</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/task-manager" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            task-manager
+             <span class="Counter float-right">2</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/task-queue" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            task-queue
+             <span class="Counter float-right">2</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/task-runner" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            task-runner
+             <span class="Counter float-right">2</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/task-scheduler" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            task-scheduler
+             <span class="Counter float-right">2</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/templates" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            templates
+             <span class="Counter float-right">2</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/wagtail-cms" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            wagtail-cms
+             <span class="Counter float-right">2</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/web" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            web
+             <span class="Counter float-right">2</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/actions" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            actions
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/actions-list" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            actions-list
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/active-desktop" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            active-desktop
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/admin" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            admin
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/album" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            album
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/amazon" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            amazon
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/amqp" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            amqp
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/analytics" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            analytics
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/analyze" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            analyze
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/ansible-role" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            ansible-role
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/app" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            app
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/apple" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            apple
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/asgi" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            asgi
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/assets" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            assets
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/async" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            async
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/asyncio" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            asyncio
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/audio" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            audio
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/autocomplete" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            autocomplete
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/awesome-lists" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            awesome-lists
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/awesome-stars" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            awesome-stars
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/aws-cli" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            aws-cli
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/aws-cloudformation" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            aws-cloudformation
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/aws-cloudwatch-logs" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            aws-cloudwatch-logs
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/background-jobs" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            background-jobs
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/badge" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            badge
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/badge-maker" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            badge-maker
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/bash" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            bash
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/blog" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            blog
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/blogging" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            blogging
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/bot" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            bot
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/breadcrumbs" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            breadcrumbs
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/buildbot-numtide" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            buildbot-numtide
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/bundle" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            bundle
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/captcha" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            captcha
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/cbv" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            cbv
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/cbvs" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            cbvs
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/ccmenu" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            ccmenu
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/celery" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            celery
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/celery-task" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            celery-task
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/celerybeat" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            celerybeat
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/chart" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            chart
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/cheatsheet" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            cheatsheet
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/ci" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            ci
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/ci-cd" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            ci-cd
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/cicd" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            cicd
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/class-based" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            class-based
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/class-based-views" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            class-based-views
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/clean" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            clean
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/click" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            click
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/clipboard" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            clipboard
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/cloud" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            cloud
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/cloud-management" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            cloud-management
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/cloudformation-template" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            cloudformation-template
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/cloudwatch-logs" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            cloudwatch-logs
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/cms-framework" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            cms-framework
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/command" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            command
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/commandline-interface" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            commandline-interface
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/comment-spam" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            comment-spam
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/comment-system" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            comment-system
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/commenting-engines" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            commenting-engines
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/comments" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            comments
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/comments-widget" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            comments-widget
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/configuration" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            configuration
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/container" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            container
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/containers" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            containers
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/continuous-delivery" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            continuous-delivery
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/continuous-integration" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            continuous-integration
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/cookies" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            cookies
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/country" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            country
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/country-codes" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            country-codes
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/country-flags" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            country-flags
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/cpplint" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            cpplint
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/crawler" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            crawler
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/crawling" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            crawling
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/cruisecontrol" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            cruisecontrol
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/css-assets" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            css-assets
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/css-framework" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            css-framework
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/css-processor" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            css-processor
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/cssnano" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            cssnano
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/curated-list" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            curated-list
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/curl" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            curl
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/dank" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            dank
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/data" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            data
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/date" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            date
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/datetime" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            datetime
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/debugging" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            debugging
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/delayed-jobs" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            delayed-jobs
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/delayed-tasks" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            delayed-tasks
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/dependency-graph" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            dependency-graph
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/desktop-wallpaper" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            desktop-wallpaper
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/development" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            development
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/direnv" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            direnv
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/discord-api" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            discord-api
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/discord-bot" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            discord-bot
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/discord-py" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            discord-py
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/discord-webhook-notifications" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            discord-webhook-notifications
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/discord-webhooks" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            discord-webhooks
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/disk-encryption" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            disk-encryption
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/distributed-lock" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            distributed-lock
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/django-application" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            django-application
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/django-braces" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            django-braces
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/django-cms" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            django-cms
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/django-cms-plugin" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            django-cms-plugin
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/django-fluent" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            django-fluent
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/django-formsets" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            django-formsets
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/django-hijack" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            django-hijack
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/django-imagekit" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            django-imagekit
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/django-photo-gallery" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            django-photo-gallery
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/django-rest-framework-addon" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            django-rest-framework-addon
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/django-webpack-loader" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            django-webpack-loader
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/dnscrypt-proxy" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            dnscrypt-proxy
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/docker" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            docker
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/docker-container" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            docker-container
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/dump" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            dump
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/dynamic" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            dynamic
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/dynamic-forms" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            dynamic-forms
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/dynamic-wallpaper" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            dynamic-wallpaper
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/ec2-container-service" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            ec2-container-service
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/ecommerce" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            ecommerce
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/ecs" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            ecs
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/elasticcontainerservice" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            elasticcontainerservice
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/environment" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            environment
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/examples" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            examples
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/extension" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            extension
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/extensions" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            extensions
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/feincms-widget" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            feincms-widget
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/filter" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            filter
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/filter-dropdown" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            filter-dropdown
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/firefox-addon" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            firefox-addon
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/fish" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            fish
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/flask" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            flask
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/font" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            font
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/fontawesome" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            fontawesome
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/forhumans" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            forhumans
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/form-builder" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            form-builder
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/form-designer" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            form-designer
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/form-generator" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            form-generator
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/form-wizards" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            form-wizards
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/formatter" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            formatter
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/forms" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            forms
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/framework" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            framework
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/functional-css" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            functional-css
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/geodjango" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            geodjango
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/gettext" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            gettext
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/git" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            git
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/gitbook" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            gitbook
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/github-actions" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            github-actions
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/github-extension" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            github-extension
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/gocd" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            gocd
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/google-maps" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            google-maps
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/hacktoberfest2021" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            hacktoberfest2021
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/help" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            help
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/hot-reload" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            hot-reload
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/html" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            html
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/humans" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            humans
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/i18n" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            i18n
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/icon-css" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            icon-css
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/icons" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            icons
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/input" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            input
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/interactive" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            interactive
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/internationalization" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            internationalization
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/intrusion-detection" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            intrusion-detection
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/jakubroztocil" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            jakubroztocil
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/jenkins" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            jenkins
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/job-queue" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            job-queue
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/jquery-tags" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            jquery-tags
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/json" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            json
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/leaflet" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            leaflet
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/libsass" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            libsass
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/linux" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            linux
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/list" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            list
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/litestar" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            litestar
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/litestar-api" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            litestar-api
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/litestar-framework" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            litestar-framework
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/macbook-configuration" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            macbook-configuration
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/macbook-security" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            macbook-security
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/macos-app" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            macos-app
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/macos-security" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            macos-security
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/macos-setup" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            macos-setup
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/macosx" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            macosx
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/markdown" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            markdown
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/menu" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            menu
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/menu-generator" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            menu-generator
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/menu-navigation" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            menu-navigation
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/menus" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            menus
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/messages" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            messages
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/metadata" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            metadata
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/metrics" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            metrics
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/mezzanine-page-processor" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            mezzanine-page-processor
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/minification" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            minification
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/minify" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            minify
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/minimisation" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            minimisation
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/minimization" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            minimization
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/minimizer" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            minimizer
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/minimizes" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            minimizes
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/msgspec" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            msgspec
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/multi-platform" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            multi-platform
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/multilingual" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            multilingual
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/navigation" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            navigation
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/node-sass" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            node-sass
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/objective-c" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            objective-c
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/open-street-map" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            open-street-map
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/openapi" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            openapi
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/optimisation" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            optimisation
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/orm" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            orm
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/oscar" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            oscar
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/pallets" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            pallets
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/pep8" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            pep8
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/perfmatters" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            perfmatters
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/performance" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            performance
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/performance-analysis" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            performance-analysis
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/performance-dashboard" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            performance-dashboard
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/performance-metrics" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            performance-metrics
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/photo-gallery" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            photo-gallery
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/pip" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            pip
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/plash" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            plash
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/postgres" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            postgres
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/profile-readme" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            profile-readme
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/programming" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            programming
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/pydantic" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            pydantic
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/pyflakes" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            pyflakes
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/pypi" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            pypi
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/python-2" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            python-2
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/python-3" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            python-3
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/python-libary" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            python-libary
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/python-logging" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            python-logging
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/python-requests" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            python-requests
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/python2" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            python2
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/queue-tasks" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            queue-tasks
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/queue-workers" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            queue-workers
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/queued-jobs" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            queued-jobs
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/rabbit" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            rabbit
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/rapidoc" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            rapidoc
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/readme" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            readme
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/readme-generator" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            readme-generator
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/readme-stats" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            readme-stats
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/recaptcha" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            recaptcha
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/recaptcha-v3" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            recaptcha-v3
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/recaptchav2" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            recaptchav2
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/redis-queue" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            redis-queue
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/redoc" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            redoc
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/remark42" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            remark42
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/requests" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            requests
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/responsive" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            responsive
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/restful" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            restful
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/restful-api" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            restful-api
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/role" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            role
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/rq" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            rq
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/ruby" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            ruby
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/ruff" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            ruff
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/rust" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            rust
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/rustpython" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            rustpython
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/sass-files" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            sass-files
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/scraping" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            scraping
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/scss" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            scss
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/scss-files" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            scss-files
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/select" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            select
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/self-hosted" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            self-hosted
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/server" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            server
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/serverless" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            serverless
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/setup" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            setup
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/shell-extension" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            shell-extension
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/shop" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            shop
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/sitespeed" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            sitespeed
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/sitetree" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            sitetree
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/size" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            size
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/sqs" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            sqs
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/sqs-queue" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            sqs-queue
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/star" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            star
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/starlite" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            starlite
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/starlite-api" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            starlite-api
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/starred" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            starred
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/static" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            static
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/static-analysis" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            static-analysis
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/static-code-analysis" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            static-code-analysis
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/static-site" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            static-site
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/status" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            status
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/streamfield" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            streamfield
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/sublime-text" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            sublime-text
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/sublimelinter" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            sublimelinter
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/summernote" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            summernote
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/svg-icons" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            svg-icons
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/svg-sprites" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            svg-sprites
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/swagger" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            swagger
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/swift" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            swift
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/swiftui" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            swiftui
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/system" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            system
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/tag-input" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            tag-input
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/tagging" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            tagging
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/tags" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            tags
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/tailwindcss" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            tailwindcss
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/tcsh" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            tcsh
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/thoughtworks" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            thoughtworks
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/time" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            time
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/timezones" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            timezones
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/tldr" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            tldr
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/translation" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            translation
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/travis-ci" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            travis-ci
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/travis-scripts" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            travis-scripts
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/travis-webhooks" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            travis-webhooks
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/treemap" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            treemap
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/uglify" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            uglify
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/utilities" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            utilities
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/utility" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            utility
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/utility-classes" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            utility-classes
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/video" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            video
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/views" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            views
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/wagtail-page" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            wagtail-page
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/wagtail-plugin" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            wagtail-plugin
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/wallpaper" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            wallpaper
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/web-scraping" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            web-scraping
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/web-scraping-python" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            web-scraping-python
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/webfont" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            webfont
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/webhook" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            webhook
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/webpack-bundle-analyzer" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            webpack-bundle-analyzer
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/webperf" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            webperf
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/windows" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            windows
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/workers" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            workers
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/wysiwyg" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            wysiwyg
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/zsh" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            zsh
+             <span class="Counter float-right">1</span></span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/topic/None" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            None
+             <span class="Counter float-right">90</span></span></a></div></details-menu></details><details class="details-reset details-overlay position-relative mt-1 mt-lg-0 mr-1"><summary class="btn" aria-haspopup="menu" role="button" >
+    Sort
+    <span class="text-bold"></span><span class="dropdown-caret"></span></summary><details-menu class="SelectMenu right-lg-0" role="menu"><div class="SelectMenu-modal"><header class="SelectMenu-header"><span class="SelectMenu-title text-left">Select order
+        
+      </span></header><div class="SelectMenu-list"><a class="SelectMenu-item selected" aria-checked="true" role="menuitemradio" href="/stars" rel="nofollow"><svg class="octicon select-menu-item-icon"><use xlink:href="#check" /></svg><span class="pl-2 text-normal width-full text-bold">
+            Recently starred
+            
+        </span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/sort/name" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            Name
+            
+        </span></a><a class="SelectMenu-item "  role="menuitemradio" href="/stars/sort/stars" rel="nofollow"><span class="mx-2"></span><span class="pl-2 text-normal width-full ">
+            Stars
+            
+        </span></a></div></details-menu></details></div></div><div class="clearfix py-2 border-top"><strong>2</strong> results for
+
+
+stars
+ written in <strong>Jinja</strong><a class="Link Link--muted px-6" href="/repositories/"><svg class="octicon"><use xlink:href="#x" /></svg>
+Clear filter</a></div><table class="width-full"><tr class="Box-row Box-row--hover-gray"><td class="no-wrap pr-1"><svg class="octicon"><use xlink:href="#repo" /></svg></td><td class="no-wrap pr-1" style="width: 1%;"><a href="/ANXS">ANXS</a> /
+    
+    <a class="f6 no-wrap text-mono" href="https://github.com/ANXS/postgresql">postgresql</a></a></td><td class="px-1 width-full"><a class="f6 Link--muted mr-2" href="https://github.com/ANXS/postgresql">
+      Fairly full featured Ansible role for Postgresql.
+  </a></td><td class="f6 no-wrap pr-1" style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:300px"><a class="f6 Link--muted topic-tag" href="/stars/topic/ansible">ansible</a><a class="f6 Link--muted topic-tag" href="/stars/topic/ansible-role">ansible-role</a><a class="f6 Link--muted topic-tag" href="/stars/topic/postgresql">postgresql</a></td><td class="f6 no-wrap pr-1"><a class="f6" href="http://anxs.io/" title="http://anxs.io/">anxs.io/</a></td><td class="f6 no-wrap pr-1"><svg style="color:#a52a22" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-dot-fill"><path d="M8 4a4 4 0 1 1 0 8 4 4 0 0 1 0-8Z"></path></svg><a class="f6 Link--muted" href="/stars/language/jinja">Jinja</a></td><td class="no-wrap pr-1"><a class="f6 Link--muted" href="https://github.com/ANXS/postgresql/stargazers"><svg class="octicon"><use xlink:href="#star" /></svg> 844
+     
+    </a></td><td class="no-wrap pr-1"><a class="f6 Link--muted" href="https://github.com/ANXS/postgresql/forks"><svg class="octicon"><use xlink:href="#repo-forked" /></svg> 571
+    </a></td><td class="no-wrap" style="width: 1%;"><a class="Link--muted" href="https://github.com/ANXS/postgresql/activity"><svg width="155" height="24" aria-hidden="true"><defs><linearGradient id="gradient-17628006" x1="0" x2="0" y1="1" y2="0"><stop offset="0%" stop-color="var(--color-calendar-graph-day-L1-bg)"></stop><stop offset="10%" stop-color="var(--color-calendar-graph-day-L2-bg)"></stop><stop offset="25%" stop-color="var(--color-calendar-graph-day-L3-bg)"></stop><stop offset="50%" stop-color="var(--color-calendar-graph-day-L4-bg)"></stop></linearGradient><mask id="sparkline-17628006" x="0" y="0" width="155" height="22" ><polyline transform="translate(0, 22) scale(1,-1)" points="0,1 3,1 6,1 9,1 12,14 15,1 18,1 21,1 24,2 27,1 30,1 33,1 36,1 39,1 42,1 45,1 48,1 51,3 54,1 57,1 60,1 63,9 66,10 69,11 72,11 75,1 78,8 81,1 84,7 87,11 90,1 93,1 96,1 99,1 102,1 105,1 108,2 111,1 114,1 117,2 120,1 123,1 126,1 129,1 132,1 135,1 138,1 141,1 144,1 147,1 150,1 153,1 " fill="transparent" stroke="#8cc665" stroke-width="2"></mask></defs><g transform="translate(0, -3)"><rect x="0" y="-2" width="155" height="24" style="stroke: none; fill: url(#gradient-17628006); mask: url(#sparkline-17628006)"></rect></g></svg></a></td></tr><tr class="Box-row Box-row--hover-gray"><td class="no-wrap pr-1"><svg class="octicon"><use xlink:href="#repo" /></svg></td><td class="no-wrap pr-1" style="width: 1%;"><a href="/geerlingguy">geerlingguy</a> /
+    
+    <a class="f6 no-wrap text-mono" href="https://github.com/geerlingguy/ansible-role-postgresql">ansible-role-postgresql</a></a></td><td class="px-1 width-full"><a class="f6 Link--muted mr-2" href="https://github.com/geerlingguy/ansible-role-postgresql">
+      Ansible Role - PostgreSQL
+  </a></td><td class="f6 no-wrap pr-1" style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:300px"><a class="f6 Link--muted topic-tag" href="/stars/topic/ansible">ansible</a><a class="f6 Link--muted topic-tag" href="/stars/topic/database">database</a><a class="f6 Link--muted topic-tag" href="/stars/topic/postgres">postgres</a><a class="f6 Link--muted topic-tag" href="/stars/topic/postgresql">postgresql</a><a class="f6 Link--muted topic-tag" href="/stars/topic/role">role</a><a class="f6 Link--muted topic-tag" href="/stars/topic/setup">setup</a><a class="f6 Link--muted topic-tag" href="/stars/topic/sql">sql</a></td><td class="f6 no-wrap pr-1"><a class="f6" href="https://galaxy.ansible.com/geerlingguy/postgresql/" title="https://galaxy.ansible.com/geerlingguy/postgresql/">galaxy.ansible.com/geerlinggu…</a></td><td class="f6 no-wrap pr-1"><svg style="color:#a52a22" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-dot-fill"><path d="M8 4a4 4 0 1 1 0 8 4 4 0 0 1 0-8Z"></path></svg><a class="f6 Link--muted" href="/stars/language/jinja">Jinja</a></td><td class="no-wrap pr-1"><a class="f6 Link--muted" href="https://github.com/geerlingguy/ansible-role-postgresql/stargazers"><svg class="octicon"><use xlink:href="#star" /></svg> 541
+     
+    </a></td><td class="no-wrap pr-1"><a class="f6 Link--muted" href="https://github.com/geerlingguy/ansible-role-postgresql/forks"><svg class="octicon"><use xlink:href="#repo-forked" /></svg> 380
+    </a></td><td class="no-wrap" style="width: 1%;"><a class="Link--muted" href="https://github.com/geerlingguy/ansible-role-postgresql/activity"><svg width="155" height="30" aria-hidden="true"><defs><linearGradient id="gradient-69580677" x1="0" x2="0" y1="1" y2="0"><stop offset="0%" stop-color="var(--color-calendar-graph-day-L1-bg)"></stop><stop offset="10%" stop-color="var(--color-calendar-graph-day-L2-bg)"></stop><stop offset="25%" stop-color="var(--color-calendar-graph-day-L3-bg)"></stop><stop offset="50%" stop-color="var(--color-calendar-graph-day-L4-bg)"></stop></linearGradient><mask id="sparkline-69580677" x="0" y="0" width="155" height="28" ><polyline transform="translate(0, 28) scale(1,-1)" points="0,1 3,2 6,1 9,1 12,1 15,1 18,1 21,1 24,1 27,1 30,1 33,1 36,1 39,1 42,1 45,1 48,1 51,1 54,1 57,1 60,1 63,1 66,1 69,1 72,1 75,1 78,2 81,1 84,1 87,1 90,2 93,1 96,1 99,1 102,1 105,1 108,1 111,1 114,1 117,1 120,1 123,1 126,1 129,1 132,4 135,2 138,1 141,1 144,1 147,1 150,2 153,1 " fill="transparent" stroke="#8cc665" stroke-width="2"></mask></defs><g transform="translate(0, -11)"><rect x="0" y="-2" width="155" height="30" style="stroke: none; fill: url(#gradient-69580677); mask: url(#sparkline-69580677)"></rect></g></svg></a></td></tr></table></div></body>
